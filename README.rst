@@ -6,6 +6,7 @@ NewRelic platform. Currently supported backend systems are:
 
 - Alternative PHP Cache
 - Apache HTTP Server
+- Celerymon
 - CouchDB
 - Edgecast CDN "Realtime" API
 - Elasticsearch
@@ -302,6 +303,12 @@ Configuration Example
             port: 80
             path: /server-status
             #verify_ssl_cert: true
+            
+      celerymon:
+         -  name: localhost
+            host: localhost
+            port: 8989
+            #path: /api/task
 
       couchdb:
          -  name: localhost
