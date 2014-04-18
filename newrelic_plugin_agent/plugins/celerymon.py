@@ -1,6 +1,8 @@
 """
 Celerymon Support
 
+Author: prgTW <tomasz.prgtw.wojcik@gmail.com>
+
 """
 import logging
 import time
@@ -27,7 +29,7 @@ class Celerymon(base.JSONStatsPlugin):
     def http_get(self):
         self.last_request = int(time.time())
         return super(Celerymon, self).http_get()
-    
+
     def add_datapoints(self, tasks):
         """Add all of the data points for a node
 
