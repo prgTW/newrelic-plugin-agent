@@ -5,6 +5,7 @@ being profiled.
 """
 available = {
     'apache_httpd': 'newrelic_plugin_agent.plugins.apache_httpd.ApacheHTTPD',
+    'beanstalkd': 'newrelic_plugin_agent.plugins.beanstalkd.Beanstalkd',
     'celerymon': 'newrelic_plugin_agent.plugins.celerymon.Celerymon',
     'couchdb': 'newrelic_plugin_agent.plugins.couchdb.CouchDB',
     'edgecast': 'newrelic_plugin_agent.plugins.edgecast.Edgecast',
